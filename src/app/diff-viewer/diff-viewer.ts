@@ -50,7 +50,7 @@ function hello() {
     });
   }
 
-  loadFiles(originalContent: string, modifiedContent: string, language?: string) {
+  public loadFiles(originalContent: string, modifiedContent: string, language?: string) {
     if (this.mergeView) {
       this.mergeView.destroy();
     }

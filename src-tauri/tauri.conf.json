@@ -1,8 +1,8 @@
 {
   "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
-  "productName": "diffsuite-app",
+  "productName": "DiffSuite",
   "version": "0.1.0",
-  "identifier": "com.tauri.dev",
+  "identifier": "com.vinceang.diffsuite",
   "build": {
     "frontendDist": "../dist",
     "devUrl": "http://localhost:4200",
@@ -20,17 +20,8 @@
       }
     ],
     "security": {
-      "csp": null
-    }
-  },
-  "plugins": {
-    "dialog": {
-      "all": true,
-      "ask": true,
-      "confirm": true,
-      "message": true,
-      "open": true,
-      "save": true
+      "csp": null,
+      "capabilities": ["main-capability"]
     }
   },
   "bundle": {
