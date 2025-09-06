@@ -1,0 +1,15 @@
+<div class="app-container">
+  <header class="app-header">
+    <h1>{{ title() }}</h1>
+    <div class="file-controls">
+      <button (click)="selectFile1()" class="btn btn-primary">Select File 1</button>
+      <button (click)="selectFile2()" class="btn btn-primary">Select File 2</button>
+    </div>
+  </header>
+  
+  <main class="app-main">
+    <app-diff-viewer></app-diff-viewer>
+  </main>
+</div>
+
+<router-outlet></router-outlet>
